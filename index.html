@@ -10,7 +10,7 @@
   <body>
     
 
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
         <a class="navbar-brand" onclick="reload()">NEWZ</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,12 +30,15 @@
             <li class="nav-item">
               <p class="nav-link" id="politics" onclick="onNavItemClick('politics')">Politics</p>
             </li>
+            <li class="nav-item">
+              <p class="nav-link" id="India" onclick="onNavItemClick('India')">India</p>
+            </li>
             
           </ul>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2 news-input" type="text" placeholder="e.g. Science" aria-label="Search">
-            <button class="btn btn-outline-success search-button">Search</button>
-          </form>
+          <div class="d-flex">
+            <input class="form-control me-2 news-input" id="search-text" type="text" placeholder="e.g. Science" aria-label="Search">
+            <button class="btn btn-outline-success search-button" id="search-button">Search</button>
+          </div>
         </div>
       </div>
     </nav>
